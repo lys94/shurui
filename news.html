@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/news.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<!--<div class="nav-logo">
+					<img src="img/navLogo.png"  />
+				</div>-->
+				<a href="#" class="nav-logo"><img src="images/navLogo.png" /></a>
+				<div class="nav-right">
+					<ul class="majNavList">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a class="jiejue" href="solve.html">解决方案</a>
+							<div class="sub-menu lite">
+								<ul class="minorNavList">
+									<li><a href="#">监控平台</a></li>
+									<li><a href="#">车载控制器</a></li>
+									<li><a href="#">车载变流器</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="dataService.html">数据服务</a>
+							<div class="sub-menu lite">
+								<ul class="minorNavList ">
+									<li><a href="#contentdiv1" onclick="on1()">文本挖掘</a></li>
+									<li><a href="#contentdiv2" onclick="on2()">信息侦查</a></li>
+									<li><a href="#contentdiv3" onclick="on3()">工业建模</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="news.html">新闻中心</a>
+							<div class="sub-menu ">
+								<ul class="minorNavList  newsNavList">
+									<li><a href="#">公司新闻</a></li>
+									<li><a href="#">行业资讯</a></li>
+									<li><a href="#">合作伙伴</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+							<div class="sub-menu lite">
+								<ul class="minorNavList  aboutNavList">
+									<li><a href="#">公司简介</a></li>
+									<li><a href="#">联系我们</a></li>
+									<li><a href="#">人才招聘</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--解决导航栏设置position：fixed 属性脱离文档流问题-->
+
+		<div class="null"></div>
+
+		<!--网页中部-->
+		<div class="container">
+			<div id="banner">
+				<img src="images/news-banner.jpg"/>
+			</div>
+			<div class="content">
+				<!-- 内容导航栏-->
+				<div class="extraNav">
+					<div class="wrap">
+						<div class="extraNavItem extraNav-1"><a href="#" class="active" id="jiankon" onclick="on1()">公司新闻</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-2"><a href="#" id="kongzhi" onclick="on2()">行业资讯</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-3"><a href="#" id="bianliu" onclick="on3()">合作伙伴</a></div>
+					</div>
+				</div>
+
+				<!-- 公司新闻-->
+				<div class="contentdiv1 " id="contentdiv1">
+					<div class="newbox">
+						<div class="newshow">
+							<h3 class="newtitle"><span id="newtitleleft">新能源汽车远程监控系统APP正式上线</span><span id="newdata">2016.01.20</span></h3>
+							<a class="newa" id="newa" href="javascript:;" onclick="showTxt(this)" ><p class="newtxt"> 新能源汽车远程监控系统APP于2016年1月20日正式上线，用户可通过手机APP查看车辆的实时运行情况、历史运行轨迹、系统产生的效益等信息。此外，通过数据可视化的形式，该应用更为直观地显示系统实时运行数据，用户可以动态了解车辆的历史运行信息，现实对车辆进行全方位监控。</p></a>
+						</div>
+						<div class="newhide" id="newhide">
+							<p></p>
+							<div class="newhideimg">
+								<img src="images/newPic/newPic-1-1.png" alt="新能源汽车实时工况监控、安全预警">
+								<img src="images/newPic/newPic-1-2.png" alt="新能源汽车、BMS及电池管理系统平台软件">
+								<img src="images/newPic/newPic-1-3.png" alt="新能源汽车数据分析">
+								<img src="images/newPic/newPic-1-4.png" alt="新能源汽车能耗统计、电动车耗电统计">
+							</div>
+							<a href="javascript:;" id="newhidea" onclick="hideTxt(this)" class="newhidea">[收起]</a>
+						</div>
+					</div>
+					<div class="newbox">
+						<div class="newshow">
+							<h3 class="newtitle"><span id="newtitleleft">数锐智能应邀参加新能源汽车及充电设施企业交流会</span><span id="newdata">2015.12.07</span></h3>
+							<a class="newa" id="newa2" href="javascript:;" onclick="showTxt(this)" ><p class="newtxt">12月17日，由广州市汽车服务业协会主办的新能源汽车及充电设施企业交流会于云来斯堡酒店顺利开展。在本次交流上，可谓万众期待，星光熠熠！多位政府、行业协会嘉宾领导、新能源汽车制造商、经销商、充电桩设施生产、运营和服务商齐集一堂，就新能源汽车及充电设施开发及推进话题进行交流探讨。作为新能源汽车监控解决方案服务商的广州数锐智能科技有限公司应邀参加了本次活动。</p></a>
+						</div>
+						<div class="newhide" id="newhide2">
+							<p>在会上，广州市汽车服务业协会新能源汽车及充电设施专业委员会陈琳理事长表示希望通过本次企业交流会，大家联合起来，用共同的力量，建立互通互联机制，和谐抱团，从而更好地帮助新能源汽车及充电设施领域的企业落地广州，造福广州用户。今后，也将邀约更多新能源汽车及充电设施行业伙伴一起加入委员会大家庭,组织更多高质量、高效的新能源汽车及充电设施用户企业对接研讨会、交流会、沙龙。促进广州新能源汽车充电设施市场做强做大！</p>
+							<div class="newhideimg newhideimg2">
+								<img src="images/newPic/newPic-2-1.png" alt="符合国标，新能源汽车监控系统、电动车监控系统">
+							</div>
+							<p>广州数锐智能科技有限公司也极力赞同陈琳女士的观点，用共同的力量，建立互通互联机制，和谐抱团，更好地打造广州新能源汽车生态圈，保证广州用户的出行使用及安全。而新能源汽车监控服务及新能源汽车数据的深度挖掘，都将是未来发展广州新能源汽车生态圈的一个重要的环节，将为之而付出企业的一份力。</p>
+							<a href="javascript:;" id="newhidea2" onclick="hideTxt(this)" class="newhidea">[收起]</a>
+						</div>
+						
+					</div>
+					<div class="newbox">
+						<div class="newshow">
+							<h3 class="newtitle"><span id="newtitleleft">新能源汽车远程监控系统正式上线</span><span id="newdata">2015.10.24</span></h3>
+							<a class="newa" id="newa3" href="javascript:;" onclick="showTxt(this)" ><p class="newtxt">2015年10月，由广州数锐智能科技有限公司打造的新能源汽车远程监控平台正式上线，进一步推动了新能源汽车的快速发展。众所周知，随着“节能、安全、环保”的绿色理念深入人心，国家高度重视新能源汽车产业的发展，政府部门不断加大对新能源汽车的扶持力度，新能源汽车的销售量逐年上升，能否拥有一个强大的远程智能监控平台成为车厂或车队十分关心的的问题。数锐紧密落实国家行业政策、结合车厂车队需求研发的新能源平台，在新能源汽车远程监控平台领域中具有较高的地位和价值。</p></a>
+						</div>
+						<div class="newhide" id="newhide3">
+							<p>数锐新能源汽车远程监控平台以新能源汽车远程监控系统、车载终端和手机客户端为基础，充分应用数据挖掘、卫星定位、CAN数据采集等先进技术，具备角色化管理、云数据处理、可弹性定制、电池监控分析、远程故障诊断及预警机制、汽车大数据分析等特点，对新能源汽车提供实时运行安全监控服务、数据管理、车辆维护、终端管理、系统管理及其他差异化服务。</p>
+							<div class="newhideimg newhideimg3">
+								<img src="images/newPic/newPic-3-1.png" alt="企业自建平台，新能源汽车数据监控平台，安全出行尤为重要。根据不同地方标准、国家标准，灵活配置简单通用。">
+							</div>
+							<div class="newhideimg newhideimg3">
+								<img src="images/newPic/newPic-3-2.png" alt="实现智能预警，保障车辆的安全出行，提供配套解决方案(布局，软件平台，硬件服务器等)">
+							</div>
+							<p>新能源汽车远程监控平台通过实时工况检测、及时有效的向后台及管理用户发送工况预警信息，有效排除新能源汽车运行安全隐患；平台通过大数据分析，为整车企业研发部分、售后服务部门、销售部门、合约经销商提供最核心的数据支撑。平台可根据用户需求扩展功能与开发模块，提供完善的解决方案，帮助车辆管理用户解决车辆运营中的各种难题。</p>
+							<a href="javascript:;" id="newhidea3" onclick="hideTxt(this)" class="newhidea">[收起]</a>
+						</div>
+						
+						</div>
+					
+					<div class="newbox">
+						<div class="newshow">
+							<h3 class="newtitle"><span id="newtitleleft">“大数据”挑战直冲“互联网+新能源汽车”行业</span><span id="newdata">2015.04.11</span></h3>
+							<a class="newa" id="newa4"  href="javascript:;" onclick="showTxt(this)" ><p class="newtxt">近几年，汽车与交通行业里的“物联网”、“云计算”、“大数据”、“智能交通”等新技术词语十分火热，一场行业内的巨大变革正悄然走进人们的生活世界。</p></a>
+						</div>
+						<div class="newhide" id="newhide4">
+							<p>正如，2015年4月9-10日在天津举办的“2015中国汽车产业数据研究峰会”，一场以“大数据推动汽车产业发展”为主题的研究峰会。峰会上，参会人员就大数据时代下的汽车产业发展、跨行业多角度数据交流、汽车产业可持续发展等议题展开讨论。中国智能交通协会会长吴忠泽认为，“大数据产业在经历了数据爆发式增长的大数据1.0时代后，开始进入了以大数据中创造实际价值为标志的2.0时代，技术日趋精细，专业服务日益多样。大数据时代的来临给汽车产业带来的是电动化、轻量化、智能化、网络化的相互融合。”</p>
+							<p>吴会长表示，大数据挑战在于当今中国汽车厂商众多，相关数据检测方式多样，信息模式复杂，造成数据种类繁多，且缺乏统一标准；在于数据开放时的安全监管不足；在于提升汽车数据资源的综合利用率的方法不完善；在于有效的市场化推进机制的缺乏；在于汽车行业大数据顶层设计的缺乏。因此，加快汽车大数据分析技术研发，促进汽车制造商的服务转型，将是中国汽车产业重要的发展方向。</p>
+							<p>而目前，对汽车行业大数据的收集、分析与利用的平台尚缺乏。结合国家国情与现状，采用数据挖掘新技术，研发智能交通系统，推动汽车行业的信息化发展，必将成为时代所趋。</p>
+							<a href="javascript:;" id="newhidea4" onclick="hideTxt(this)" class="newhidea">[收起]</a>
+						</div>
+						
+					</div>
+					</div>
+				</div>
+
+				<!--行业资讯-->
+				<div class="contentdiv2" id="contentdiv2">
+					<div class="newbox">
+						<div class="newshow">
+							<h3 class="newtitle"><span id="newtitleleft">自动驾驶要火!工信部推进车联网标准制定</span><span id="newdata">2015.12.22</span></h3>
+							<a class="newa" href="javascript:;" onclick="showTxt(this)" ><p class="newtxt">工信部近日发布贯彻落实《国务院关于积极推进“互联网 ”行动的指导意见》的行动计划（2015-2018年）， 首次提出要出台《车联网发展创新行动计划（2015-2020年）》，要求推动车联网技术研发和标准制定，组织开展车联网试点、基于5G技术的车联网示范。百度同时宣布成立自动驾驶事业部，计划3年实现自动驾驶汽车的商用化，5年实现量产。</p></a>
+						</div>
+						<div class="newhide">
+							<p>国内的车联网起步稍慢，像谷歌已经完成了超过50辆无人驾驶汽车的测试，行驶了逾100万米的路试。</p>
+							<p>而特斯拉也在上个月将系统升级为7.0，其中加入了自动驾驶功能，虽然不及谷歌的无人驾驶，但这也算是自动驾驶的大规模现实应用了。</p>
+							<p>目前国内互联网企业也快马加鞭布局汽车领域，试图在自动驾驶方面做一些新的尝试，追赶国外先进技术。另外，阿里巴巴、腾讯、乐视均在车联网系统方面投入了大量精力，要在汽车领域分一杯羹。</p>
+							<a href="javascript:;" id="newhidea4" onclick="hideTxt(this)" class="newhidea">[收起]</a>
+						</div>
+					</div>
+					<div class="newbox">
+						<div class="newshow">
+							<h3 class="newtitle"><span id="newtitleleft">互联网+车，引领汽车行业新趋势</span><span id="newdata">2015.12.18</span></h3>
+							<a class="newa" href="javascript:;" onclick="showTxt(this)" ><p class="newtxt">2015乌镇开幕的互联网之光博览会是世界互联网大会重要组成部分，展出具有国际领先水平的无人车、全景虚拟摄像平台以及安全高速无线上网服务，吸引众多目光，互联网+汽车模式将互联网、信息化技术手段应用到汽车，引领新一轮的车辆智能化浪潮。</p></a>
+						</div>
+						<div class="newhide">
+							<p>相对如火如荼的私家车智能化道路，商用车车联网应用显得更加谨慎，在目前大环境下，商用车车辆管理更注重车辆定位、行车安全、油耗监控、车队绩效考核的管理与应用，中交慧联作为行业领导企业，不断加大车辆管理软件的开发力度，从实用角度出发，做法更接地气。</p>
+							<p>中交慧联持续加大与传统车厂合作，结合双方优势，更好地利用互联网技术服务自身，借助信息技术手段提高附加值，提高传统车漆转型能力，这些方面中交慧联已经积累了很好的经验，通过世界互联网大会这样的平台，可以和更多人分享交流。</p>
+							<p>在世界互联网大会的推动下，中国的汽车制造产业能够更好地推进工业和信息化的融合，更好地推进互联网+战略的实现，提升商中国汽车品牌影响力。</p>
+							<a href="javascript:;" id="newhidea4" onclick="hideTxt(this)" class="newhidea">[收起]</a>
+						</div>
+					</div>
+					<div class="newbox">
+						<div class="newshow">
+							<h3 class="newtitle"><span id="newtitleleft">你期待的车联网是什么样子？</span><span id="newdata">2015.11.06</span></h3>
+							<a class="newa" href="javascript:;" onclick="showTxt(this)"><p class="newtxt">互联网发展到今天，对你而言，是否已经融入你的生活，成为无法分割的一部分呢？随着互联网技术在汽车领域的不断发展，车联网应用格局越发清晰和明显，不久的将来，我们将迈入一个真正的车联网时代，对于一个那样的时代，你又有何期待呢？</p></a>
+						</div>
+						<div class="newhide">
+							<div class="newhideimg newhideimg4">
+								<img src="images/newPic/inforPic-3-1.jpg" alt="数锐智能数据比较">
+							</div>
+							<p>我们不妨看看2014年，GFK在全球6个一些调查公司的数据，对比其他国家，中国车主对于驾驶经验的评价是最积极正面的。有超过一半的车主驾车过程能够保持愉悦的心情，7成车主表示很享受驾车过程，有车主表示：特别是寒暑天气，虽然面对拥堵的交通，但我至少感受到我还能坐在车里听着音乐是件幸福的事情。根据调查数据不难发现，中国车主最关心的问题是:交通事故、道理拥堵、车辆故障三个方面，当然，大家对危险驾驶和抢道行为表示非常讨厌。</p>
+							<div class="newhideimg newhideimg4">
+								<img src="images/newPic/inforPic-3-2.jpg" alt="数锐智能数据比较">
+							</div>
+							<p>相比于西方发达国家，中国车主对于车联网新技术给予更多的是肯定和包容态度，对于炒的比较热的自动驾驶、数据追踪等车联网概念，大家也有较高的认可度。</p>
+							<p>车辆网对于大家什么最重要?中国消费者给出了这样的答案，车联网做核心的功能是安全，保证安全的前提下其他功能才有意义。大约60%的车主一天的驾车时间超过5个小时，因此对于驾驶坐骑的舒适度，良好的驾驶操控性、保护健康和身心放松等方面有较高的需求。</p>
+							<p>那么，车联网时代，你需要什么又或者你期待进入一个什么样的车联网时代呢？</p>
+							<a href="javascript:;" id="newhidea4" onclick="hideTxt(this)" class="newhidea">[收起]</a>
+						</div>
+					</div>
+					<div class="newbox">
+						<div class="newshow">
+							<h3 class="newtitle"><span id="newtitleleft">百亿市场：新能源成为汽车共享突破口</span><span id="newdata">2015.11.03</span></h3>
+							<a class="newa" href="javascript:;" onclick="showTxt(this)"><p class="newtxt">去年被认为是新能源汽车市场化“元年”，但公商务用车仍然是新能源汽车上量的最重要途径。广州车展期间，吉利汽车集团总裁兼CEO安聪慧表示，未来两到三年，吉利在新能源汽车领域仍然以大客户为主，受制于配套设施尚不完备等因素，新能源车的“共享”属性鲜明。</p></a>
+						</div>
+						<div class="newhide">
+							<p>在政策强势推动下，分时租赁成为新能源车落地的最大出口。受此影响，分时租赁业务将在2016年进入爆发“窗口期”，微租车创始人兼CEO杨洋接受记者采 访时表示，按照成熟市场经验，未来80%的出行依靠汽车共享，这一市场可达到百亿规模，而且会很快到来。同时，分时租赁行业的门槛也正在加速提升，商业模式在中国市场进入快速孵化期。</p>
+							<p>“我们是做数据出身的互联网企业，拥有数据基础之后，我考察了包括租车、餐饮、地产等多个服务行业，发现租车行业的商业模式最落后，可尝试空间也最 大，因此选定了这个领域。”杨洋表示，微租车作为一个轻资产企业，提供分时租赁车辆的运营管理系统，与新能源车生产企业合作，打造城市汽车共享闭环。</p>
+							<p>汽车共享起源于欧洲，现在除欧洲以外，在北美、日本、韩国、澳大利亚等国家，都发展很快。电动汽车整车租赁业务遍布全球近十个国家。近5年来，以德国Car2go、法国Autolib为代表的电动汽车共享成功运营，为中国城市发展电动汽车分时租赁提供了重要参考。</p>
+							<p>所谓分时租赁，即“按小时定价，按分钟计价”，此计费方式让用户自由把控用车时间，省去门店人员的时间与成本，而在新能源汽车在补贴之后，租赁价格更加便宜。在车辆使用完毕后，通过互联网支付即可，让用户用车时间更合理，同时节省了不必要的车辆空闲时间。</p>
+							<p>“受限于驾驶里程等因素，新能源车并不是分时租赁的最佳选择，但在强势政策的推动下，新能源车与分时租赁形成相互促进的态势。”北汽新能源持股的绿狗租车相关负责人向记者表示，作为北汽新能源重要的车辆出口，绿狗租车通过分时租赁让消费者通过最小成本体验新能源汽车。</p>
+							<p>处于起步期的我国分时租赁模式仍处于1.0时代。比如，由于商业模式不完善、对于车辆控制系统不完备等问题原因，目前分时租赁用户体验难尽人意，比如取车和换车网点固定，且网点难以普及。同时，在当下商业模式中，租车企业资产越来越重，当下模式的革新势必出现。</p>
+							<p>“2016年，本市计划在国家部委及北京市相关单位完成2000辆纯电动车分时租赁的示范运营，到年底计划完成6000辆，包括建成175个充电网 点。”北京市新能源汽车发展促进中心副主任韦瑾说。届时，北京市将建立基本覆盖中央驻京单位、北京市党政机关等公共机构间的自助分时租赁网。</p>
+							<p>不仅北京如此，新年伊始，由各地政府相关部门主导的新能源车分时租赁快速展开。2016年深圳2万个电动小汽车增量指标已全部配置完毕。其中，9600个电动车指标分别配置给汽车租赁企业与分时租赁公司等，元旦起深圳市民提供电动汽车分时租赁服务。</p>
+							<p>此外，青岛、武汉等地的新能源车分时租赁体系也相继完成，今年各地新能源车分时租赁将成为新能源车的最重要流向。“除了解决销售去向，让消费者体验 新能源车更为重要，通过这一方式，普及新能源车的使用习惯，对于改变目前汽车结构，推进新能源车未来的大规模普及有重要影响。”一位新能源车生产企业的相 关负责人向记者表示。</p>
+							<p>另一方面，新能源车正在加速实践分时租赁模式，改变用车习惯。“未来中国的汽车租赁市场将是不可估量的”杨洋同样认为，“放眼未来，租车行业必将成 为一块大蛋糕，这也就是诸多金融巨鳄进入市场的目的。但就目前而言，中国虽然拥有执照司机多达2.4亿人次，但老百姓并没有普遍形成租车使用的习惯和意 识，与欧美相比，中国80%的租赁市场仍属空白，未被开发。”</p>
+							<p>资料显示，中国仍是全球增长最为快速的汽车市场之一，但如此形势仍然无法满足日益增长的司机数量。因此，通过租车为代表的共享经济完成潜在用户的驾车需求，是接下来汽车市场的重要商机。</p>
+							<a href="javascript:;" id="newhidea4" onclick="hideTxt(this)" class="newhidea">[收起]</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 合作伙伴-->
+				<div class="contentdiv3" id="contentdiv3">
+					<div class="partnerbox">
+						<img src="images/cop-par/img21.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--网页底部-->
+		<footer>
+			<div class="footerdiv">
+				<div class="footerdivlist">
+					<ul>
+						<li>
+							<h3>解决方案</h3></li>
+						<li><a href="#">监控平台</a></li>
+						<li><a href="#">车载控制器</a></li>
+						<li><a href="#">车载变流器</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li>
+							<h3>信息服务</h3></li>
+						<li><a href="#">文本挖掘</a></li>
+						<li><a href="#">信息侦查</a></li>
+						<li><a href="#">工业建模</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li>
+							<h3>新闻中心</h3></li>
+						<li><a href="#">公司新闻</a></li>
+						<li><a href="#">行业资讯</a></li>
+						<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li>
+							<h3>关于我们</h3></li>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist  left">
+					<ul>
+						<li>地址：广州市天河区燕岭路新燕大厦93号1103—1104</li>
+						<li>电话：020-2907 6394</li>
+						<li>邮箱：lihong@gzsiri.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="beian">
+				<p>Copyright © 2015-2016 数锐智能科技有限公司 版权所有<span><a href="#" >&nbsp;粤ICP备15002140号</a></span></p>
+			</div>
+		</footer>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+</html>

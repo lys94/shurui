@@ -1,0 +1,361 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: #333333;
+	z-index: 1000;
+}
+.null{
+	width: 100%;
+	height: 60px;
+}
+.nav{
+	height: 60px;
+	width: 1300px;
+	
+}
+.nav-logo img{
+	height: 60px;
+	overflow: hidden;
+	margin-left: 20px;
+}
+.nav-right{
+	margin-right: 100px;
+	height: 60px;
+	float: right;
+}
+.nav-right ul{
+    margin: 0;
+}
+.nav-right ul li{
+	position: relative;
+	width: 100px;
+	height: 60px;
+	float: left;
+	list-style-type: none;
+}
+.nav-right ul li a{
+	display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-right ul li a:hover {
+	background-color: #717171;
+	
+}
+
+.nav li:hover .sub-menu{
+	display: block;
+}
+.sub-menu{
+	display: none;
+}
+
+.minorNavList{
+	width: 300px !important;
+    position: absolute;
+    background: #c9c9c9;
+    border-radius: 0 0 5px 5px;
+    top: 60px;
+    left: -100px;
+}
+
+/*
+ *content
+*/
+.container{
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	height: 382px;
+}
+			
+.list {
+	width: 900px;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+			
+.listdiv {
+	width: 250px;
+	height: 300px;
+	border: 1px solid #CFCFCF;
+	float: left;
+	margin-right: 72px;
+}
+			
+.listdiv:nth-child(3) {
+	margin-right: 0;
+}
+			
+.listdiv img {
+	display: block;
+	height: 70px;
+	width: 70px;
+	margin: 25px auto 20px;
+}
+			
+.listdiv h3 {
+	font-size: 16px;
+	text-align: center;
+	color: #6e6e6e;
+}
+			
+.listdiv .listdiv-hr {
+	width: 50px;
+	height: 5px;
+	background: #299DFF;
+	margin: 10px auto 5px;
+	border: none;
+}
+			
+.listdiv .listdiv-txt {
+	width: 155px;
+	font-size: 14px;
+	color: #6e6e6e;
+	margin: 0 auto;
+	line-height: 24px;
+}
+
+/* 中部产品内容样式*/
+.product{
+	width: 100%;
+	background: #eee;
+	padding-bottom: 16px;
+}
+.productbox{
+	text-align: center;
+	width: 100%;
+	height: 130px;
+}
+.productbox .title{
+	padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    color: #299DFF;
+    font-family: 'britannic bold';
+}
+
+.chanping{
+    position: relative;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 526px;
+    margin: 0 auto 25px;
+}
+
+.chanping .left-hr{
+	position: absolute;
+	top: 60%;
+    left: 62%;
+    width: 180px;
+    height: 1px;
+    background: #959595;
+    
+}
+.chanping .right-hr{
+	position: absolute;
+	top: 60%;
+    left: 4%;
+    width: 180px;
+    height: 1px;
+    background: #959595;
+
+}
+
+
+.chanping-title{
+	position: absolute;
+    width: 170px;
+    color: #299DFF;
+    top: 0px;
+    left: 180px;
+    font-size: 20px;
+}
+
+.trait{
+	width: 1000px;
+	height: 333px;
+	margin: 0 auto;
+}
+.trait-box{
+    float: left;
+    margin-right: 130px;
+    width: 432px;
+    height: 319px;
+    background-color: #F8F8F8;
+    box-shadow: 10px 10px 5px #D2D2D2;
+    text-align: center;
+}
+.trait-box:nth-child(2){
+	margin-right: 0;
+}
+
+.trait-box h2{
+	font-size: 24px;
+    color: #545454;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.trait-box p{
+	font-size: 14px;
+    color: #545454;
+    line-height: 24px;
+    width: 378px;
+    margin-left: 44px;
+    text-align: left;
+}
+.trait-img{
+	width: 195px;
+    height: 90px;
+    margin: 31px auto 38px;
+}
+
+.teamwork{
+	width: 100%;
+	padding-bottom: 16px;
+}
+.teamworkbox{
+	text-align: center;
+	width: 100%;
+	height: 130px;
+}
+.teamworkbox .title{
+	padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    color: #299DFF;
+    font-family: 'britannic bold';
+}
+
+.huoban{
+    position: relative;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 526px;
+    margin: 0 auto 25px;
+}
+
+.huoban .left-hr{
+	position: absolute;
+	top: 60%;
+    left: 62%;
+    width: 180px;
+    height: 1px;
+    background: #959595;
+    
+}
+.huoban .right-hr{
+	position: absolute;
+	top: 60%;
+    left: 4%;
+    width: 180px;
+    height: 1px;
+    background: #959595;
+
+}
+
+.huoban-title{
+	position: absolute;
+    width: 170px;
+    color: #299DFF;
+    top: 0px;
+    left: 180px;
+    font-size: 20px;
+}
+.teamworkbox2{
+	margin: 0 auto;
+	width: 15%;
+}
+.partnerList{
+    display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+}
+.teamworkbox2 li{
+	list-style-type: none;
+	padding: 0 10px;
+}
+.teamworkbox2 li img{
+	width: 54px;
+	height: 47px;
+}
+
+/*ffooter样式*/
+
+footer{
+	width: 100%;
+	height: 250px;
+	background-color: #4A4A4A;
+}
+.footerdiv{
+	width: 1000px;
+	height: 250px;
+	margin: 0 auto;
+}
+.footerdivlist{
+	float: left;
+	width: 150px;
+	margin-top: 39px;
+}
+.footerdivlist li{
+	line-height: 36px;
+	list-style-type: none;
+}
+.footerdivlist li a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 14px;
+}
+.footerdivlist li a:hover{
+	color: #299DFF;
+}
+.footerdivlist ul li h3{
+	color: #FFF;
+	font-size: 18px;
+}
+
+.left{
+	width: 400px !important;
+	font-size: 14px;
+	margin-top: 76px;
+	color: #fff;
+}
+.beian{
+	height: 60px;
+	background-color: #272727;
+	text-align: center;
+	color: #fff;
+	
+}
+.beian p{
+	margin: 0px;
+	padding-top: 20px;
+	color: #fff;
+	font-size: 14px;
+}
+.beian p span a {
+	text-decoration: none;
+	color: #fff;
+	
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/solve.css" />
+	</head>
+	<body>
+		<!--网页头部-->
+		<header class="header">
+			<nav class="nav">
+				<!--<div class="nav-logo">
+					<img src="img/navLogo.png"  />
+				</div>-->
+				<a href="#" class="nav-logo"><img src="images/navLogo.png" /></a>
+				<div class="nav-right">
+					<ul class="majNavList">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a class="jiejue"  href="solve.html">解决方案</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList">
+					              <li><a href="#jiankon" onclick="on1()">监控平台</a></li>
+					              <li><a href="#kongzhi" onclick="on2()">车载控制器</a></li>
+					              <li><a href="#bianliu" onclick="on3()">车载变流器</a></li>
+					            </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="dataService.html">数据服务</a>
+							<div class="sub-menu lite">
+								<ul class="minorNavList ">
+					              <li><a href="dataService.html">文本挖掘</a></li>
+					              <li><a href="dataService.html">信息侦查</a></li>
+					              <li><a href="dataService.html">工业建模</a></li>
+					            </ul>
+							</div>
+						</li>
+						<li>
+							<a href="news.html">新闻中心</a>
+							<div class="sub-menu " >
+								<ul class="minorNavList  newsNavList" >
+                                  <li><a href="news.html">公司新闻</a></li>
+			                      <li><a href="news.html">行业资讯</a></li>
+			                      <li><a href="news.html">合作伙伴</a></li>
+                                </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList  aboutNavList">
+				              		<li><a href="about.html">公司简介</a></li>
+				                    <li><a href="about.html">联系我们</a></li>
+				                    <li><a href="about.html">人才招聘</a></li>
+				                </ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<!--解决导航栏设置position：fixed 属性脱离文档流问题-->
+		
+		<div class="null"></div>
+
+		<!--网页中部-->
+		
+		<div class="container">
+			<div id="banner">
+				<img src="images/solve-banner.jpg" />
+			</div>
+			<div class="content"id="content">
+				<div class="extraNav">
+					<div class="wrap">
+						<div class="extraNavItem extraNav-1"><a href="#" class="active" id="jiankon" onclick="on1()" >监控平台</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-2"><a href="#" id="kongzhi" onclick="on2()">车载控制器</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-3"><a href="#" id="bianliu" onclick="on3()">车载变流器</a></div>
+					</div>
+				</div>
+				
+				<!-- 监控平台-->
+				<div class="contentdiv1" id="contentdiv1">
+					<div class="text">
+						<p>汽车远程监控平台主要是用于实时采集新能源车辆工况数据，通过实时工况检测、及时有效地向后台及管理用户发送车辆预警信息，有效排除新能源汽车运行安全隐患，同时为客户提供最核心的数据支撑，搭配定制化终端APP客户端服务，可以有效地提高管理用户的管理效率。</p>
+					</div>
+					<div class="list">
+						<div class="listdiv">
+							<h2><i><img src="images/1.png" /></i> <span id="title">跟踪定位</span></h2>
+							<p>支持车辆的实时定位、跟踪定位及历史轨迹回放。跟踪及回放时的车辆运行轨迹可直观显示在监控界面，方便用户及时掌握车辆的运行情况。</p>
+						</div>
+						<div class="listdiv listdiv2">
+							<h2><i><img src="images/2.png" /></i> <span id="title">轨迹回放</span></h2>
+							<p>支持车辆故障实时报警、条件报警，采用声音提示故障的方式，同时支持设置向管理用户发送故障信息邮件。提供历史故障查询与统计。</p>
+						</div>
+						<div class="listdiv">
+							<h2><i><img src="images/3.png" /></i> <span id="title">参数统计分析</span></h2>
+							<p>支持用户对车辆部件信息（电池、电机等）、运行信息（车速、里程等）、故障信息等进行统计分析，统计结果以列表、柱状图、饼图、折线图等多种形式显示。</p>
+						</div>
+						<div class="listdiv listdiv2">
+							<h2><i><img src="images/4.png" /></i> <span id="title">驾驶行为分析</span></h2>
+							<p>采用单车分析、多车分析及报表分析的方式，支持驾驶行为分布图，可实现不良驾驶行为与耗电比较、汇总比较、车速分布统计等。</p>
+						</div>
+						<div class="listdiv">
+							<h2><i><img src="images/5.png" /></i> <span id="title">车辆工况分析</span></h2>
+							<p>采用多参数分布描述车辆的运行状态，表征各参数的变化范围和变化规律，为用户评价车辆的合理运用及车辆性能、结构能否满足使用要求提供基础资料。</p>
+						</div>
+						<div class="listdiv listdiv2">
+							<h2><i><img src="images/6.png" /></i> <span id="title">电池参数分析</span></h2>
+							<p>【时间曲线】可实现蓄电池SOC均值、蓄电池端电压、电池组工作温度极大值、电池组工作温度均值、BM单电池电压极小值、BM单电池电压极大值等的时间曲线，帮助用户观察电池运行的整体情况。</p>
+						</div>
+						<div class="listdiv">
+							<h2><i><img src="images/7.png" /></i> <span id="title">充耗电监控</span></h2>
+							<p>通过充放电量成本、车队内部车辆之间成本消耗对比、驾驶行为与百公里能耗间关系、车辆自身评估与百公里能耗之间关系等报表，自动输出统计需求。</p>
+						</div>
+						<div class="listdiv listdiv2">
+							<h2><i><img src="images/8.png" /></i> <span id="title">系统管理</span></h2>
+							<p>具有车辆管理、用户管理、角色权限管理等功能，通过建立车队数据库，包括车辆编码信息、驾驶员信息、操作信息等，结合车辆指令设置功能、线路规划功能，实现车辆调度、车辆救援等应急服务。</p>
+						</div>
+					</div>
+					<div class="contact">
+		       		    <p class="contact-txt">如需申请使用，请联系：zhangjinxi@gzsiri.com</p>
+		       		</div>
+				</div>
+				
+				<!--车载控制器-->
+				<div class="contentdiv2" id="contentdiv2">
+					<div class="control">
+						<div class="control-img">
+							<img class="controlimg" src="images/VCU-ranliao.jpg" />
+						</div>
+						<div class="control-txt">
+						<h3>燃料电池控制单元</h3>
+						<h5>产品介绍</h5>
+						<p>采用32位高性能芯片，接口资源丰富。 通过汽车级ECU环境试验认证 。平台化软件开发，易于控制策略的开发。针对燃料电池电池发动机辅助系统的特定应用及要求设计硬件，满足其特殊应用 。</p>
+						<h5>产品系列</h5>
+						<ul class="proSeries">
+							<li>FCU-12X80-V3</li>
+							<li>FCU-24X80-V3</li>
+						</ul>
+					</div>
+					</div>
+					<div class="control">
+						<div class="control-img2">
+							<img class="controlimg"  src="images/VCU-zhengche.jpg" />
+						</div>
+						<div class="control-txt">
+						<h3>整车控制器</h3>
+						<h5>产品介绍</h5>
+						<p>采用32位高性能芯片。接口资源丰富。通过汽车级ECU环境试验认证。平台化软件开发，易于控制策略的开发。</p>
+						<h5>产品系列</h5>
+						<ul class="proSeries">
+							<li>
+								FCU-12X80-V3
+								<br />
+								VCU-12MH121-V2
+								<br />
+                                VCU-24M80-V2
+							</li>
+							<li>
+								FCU-24X80-V3
+								<br />
+								VCU-24MH121-V2
+							</li>
+						</ul>
+					   </div>
+				    </div>
+				    <div class="control">
+						<div class="control-img">
+							<img class="controlimg" src="images/VCU-qingqi.jpg" />
+						</div>
+						<div class="control-txt">
+						<h3>氢气管理单元</h3>
+						<h5>产品介绍</h5>
+						<p>采用32位高性能芯片、接口资源丰富 ，通过汽车级ECU环境试验认证 。平台化软件开发，易于控制策略的开发 。针对氢燃料电池供氢系统设计，满足其特殊应用。</p>
+						<h5>产品系列</h5>
+						<ul class="proSeries">
+							<li>HMS-12X80-V3</li>
+							<li>HMS-24X80-V3</li>
+						</ul>
+					    </div>
+					</div>
+					<div class="control">
+						<div class="control-img2">
+							<img class="controlimg"  src="images/VCU-reguanli.jpg" />
+						</div>
+						<div class="control-txt">
+						<h3>热管理单元</h3>
+						<h5>产品介绍</h5>
+						<p>采用32位高性能芯片。接口资源丰富 。通过汽车级ECU环境试验认证 。平台化软件开发，易于控制策略的开发 。满足新能源汽车对热管理系统提出的新需求 。</p>
+						<h5>产品系列</h5>
+						<ul class="proSeries">
+							<li>TMC-12X80-V2</li>
+						</ul>
+					   </div>
+					</div>
+			</div>
+			
+			    <!--车载变流器-->
+			    <div class="contentdiv3" id="contentdiv3">
+				<div class="converter">
+					<div class="converterdiv">
+						<img class="converterimg" src="images/u58.jpg" />
+					</div>
+					<div class="converterdiv">
+						<h3>2KW集成式DCDC模块</h3>
+						<h5>产品介绍</h5>
+						<p>额定输出功率：2000W
+							<br />
+							输出电流：0-138A
+							<br />
+							输出电压：12-16V
+							<br />
+							控制方式：CAN
+							<br />
+							开机响应时间（0-90%功率）：≤150ms
+							<br />
+							适用车型：各类纯电动车插电式混合动力车燃料电池车
+						</p>
+						<h5>产品系列</h5>
+						<ul class="proSeries">
+							<li>PBU-DC-2k138-I</li>
+						</ul>
+					</div>
+					<div class="converterdiv convertertxt">
+						<p>
+							额定功率效率：≥91%
+							<br />
+							输入电压：200-445V
+							<br />
+							散热方式：水冷
+							<br />
+							工作环境温度范围：-40-55℃
+							<br />
+							防护等级：IP67(水冷）
+							<br />
+							外形尺寸：325*192*80mm
+						</p>
+					</div>
+				</div>
+				<div class="converter">
+					
+					<div class="converterdiv">
+						<h3>2KW水冷DCDC</h3>
+						<h5>产品介绍</h5>
+						<p>额定输出功率：2000W
+							<br />
+							输出电流：0-138A
+							<br />
+							输出电压：12-16V
+							<br />
+							控制方式：CAN
+							<br />
+							开机响应时间（0-90%功率）：≤150ms
+							<br />
+							适用车型：各类纯电动车插电式混合动力车燃料电池车
+						</p>
+						<h5>产品系列</h5>
+						<ul class="proSeries">
+							<li>PBU-DC-2k138-I</li>
+						</ul>
+					</div>
+					<div class="converterdiv convertertxt">
+						<p>
+							额定功率效率：≥91%
+							<br />
+							输入电压：200-445V
+							<br />
+							散热方式：水冷
+							<br />
+							工作环境温度范围：-40-55℃
+							<br />
+							防护等级：IP67(水冷）
+							<br />
+							外形尺寸：325*192*80mm
+						</p>
+					</div>
+					<div class="converterdiv">
+						<img class="converterimg" src="images/u63.jpg" />
+					</div>
+				</div>
+				<div class="converter">
+					<div class="converterdiv">
+						<img class="converterimg" src="images/u68.jpg" />
+					</div>
+					<div class="converterdiv">
+						<h3>1KW自然冷DCDC</h3>
+						<h5>产品介绍</h5>
+						<p>额定输出功率：1000W
+							<br />
+							输出电流：0-70A
+							<br />
+							输出电压：9-16V
+							<br />
+							工作环境温度：0℃-60℃	
+							<br />
+							散热方式：自然冷却
+							<br />
+							适用车型：观光车、巡逻车、低速电动车
+						</p>
+						<h5>产品系列</h5>
+						<ul class="proSeries">
+							<li>PBU-DC-2k138-I</li>
+						</ul>
+					</div>
+					<div class="converterdiv convertertxt">
+						<p>
+							额定功率效率：89%
+							<br />
+							输入电压：60V-105V
+							<br />
+							控制方式：CAN/外接低电平
+							<br />
+							开机响应时间（0-90%功率）：≤150ms
+							<br />
+							防护等级：IP67
+							<br />
+							外形尺寸：252*160*90mm
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!--网页底部-->
+		<footer>
+			<div class="footerdiv">
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>解决方案</h3></li>
+						<li><a href="#">监控平台</a></li>
+						<li><a href="#">车载控制器</a></li>
+						<li><a href="#">车载变流器</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">					
+					<ul>
+						<li><h3>信息服务</h3></li>
+						<li><a href="#">文本挖掘</a></li>
+						<li><a href="#">信息侦查</a></li>
+						<li><a href="#">工业建模</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>新闻中心</h3></li>
+						<li><a href="#">公司新闻</a></li>
+						<li><a href="#">行业资讯</a></li>
+						<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>关于我们</h3></li>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist  left">
+					<ul>
+						<li>地址：广州市天河区燕岭路新燕大厦93号1103—1104</li>
+						<li>电话：020-2907 6394</li>
+						<li>邮箱：lihong@gzsiri.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="beian">
+				<p>Copyright © 2015-2016 数锐智能科技有限公司 版权所有<span><a href="#" >&nbsp;粤ICP备15002140号</a></span></p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="js/common.js"></script>
+</html>

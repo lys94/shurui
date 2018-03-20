@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/jquery.easyfader.css">
+	</head>
+	<body>
+		<!--头部-->
+		<header class="header">
+			<nav class="nav">
+				<!--<div class="nav-logo">
+					<img src="img/navLogo.png"  />
+				</div>-->
+				<a href="#" class="nav-logo"><img src="images/navLogo.png" /></a>
+				<div class="nav-right">
+					<ul class="majNavList">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a class="jiejue"  href="solve.html">解决方案</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList" >
+					              <li><a href="solve.html" onclick="on1()">监控平台</a></li>
+					              <li><a href="solve.html" onclick="on2()">车载控制器</a></li>
+					              <li><a href="solve.html" onclick="on3()">车载变流器</a></li>
+					            </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="dataService.html">数据服务</a>
+							<div class="sub-menu lite">
+								<ul class="minorNavList ">
+					              <li><a href="dataService.html">文本挖掘</a></li>
+					              <li><a href="dataService.html">信息侦查</a></li>
+					              <li><a href="dataService.html">工业建模</a></li>
+					            </ul>
+							</div>
+						</li>
+						<li>
+							<a href="news.html">新闻中心</a>
+							<div class="sub-menu " >
+								<ul class="minorNavList  newsNavList" >
+                                  <li><a href="news.html">公司新闻</a></li>
+			                      <li><a href="news.html">行业资讯</a></li>
+			                      <li><a href="news.html">合作伙伴</a></li>
+                                </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList  aboutNavList">
+				              		<li><a href="about.html">公司简介</a></li>
+				                    <li><a href="about.html">联系我们</a></li>
+				                    <li><a href="about.html">人才招聘</a></li>
+				                </ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--解决导航栏设置position：fixed 属性脱离文档流问题-->
+		
+		<div class="null"></div>
+		
+		<!--banner轮播图片-->
+		<div id="dowebok" class="fader">
+			<img class="slide" src="images/banner1.jpg">
+			<img class="slide" src="images/banner2.jpg">
+			<img class="slide" src="images/banner3.jpg">
+			<div class="fader_controls">
+				<div class="page prev" data-target="prev">&lsaquo;</div>
+				<div class="page next" data-target="next">&rsaquo;</div>
+				<ul class="pager_list"></ul>
+			</div>
+		</div>
+		<!--中部内容-->
+		<div class="container">
+			<div class="content">
+				<div class="list">
+					<div class="listdiv">
+						<img src="images/listimg1.png" />
+						<h3>深度挖掘</h1>
+						<hr class="listdiv-hr" />
+						<p class="listdiv-txt">
+							根据客户需求进行数据整合和管理，协助您实现数据的标准化和互联互通，建立符合企业特点的数据体系。
+						</p>
+					</div>
+					<div class="listdiv">
+						<img src="images/liatimg2.png"/>
+						<h3>核心技术</h1>
+						<hr class="listdiv-hr" />
+						<p class="listdiv-txt">
+							拥有产品数据挖掘、系统研发、可视化处理等多项核心技术，可针对需求实现多种定制化功能。
+						</p>
+					</div>
+					<div class="listdiv">
+						<img src="images/listimg3.png"/>
+						<h3>全方位定制</h1>
+						<hr class="listdiv-hr" />
+						<p class="listdiv-txt">
+							数锐智能提供了丰富的分析指标和维度，同时也可以根据客户需求，对其中的分析逻辑、算法进行定制化构建。
+						</p>
+					</div>
+				</div>
+			</div>			
+			<div class="product">
+			<div class="productbox">
+				<h1 class="title">PRODUCT FEATURES</h1>
+				<div class="chanping">
+					<span class="left-hr"></span><h3 class="chanping-title">产品特点</h3><span class="right-hr"></span>
+					</div>
+				</div>
+				<div class="trait">
+					<div class="trait-box">
+						<div class="trait-img">
+							<img src="images/C1.png" />
+						</div>
+						<h2>新能源汽车解决方案</h2>
+						<p>
+							汽车远程监控平台主要是用于实时采集新能源车辆工况数据，通过实时工况检测、及时有效地向后台及管理用户发送车辆预警信息，有效排除新能源汽车运行安全隐患。
+						</p>
+					</div>
+					<div class="trait-box">
+						<div class="trait-img">
+							<img src="images/C2.png" />
+						</div>
+						<h2>大数据分析决策</h2>
+						<p>
+							通过智能数据库对海量数据进行互联互通、整合管理，并基于数据挖掘模型，挖掘大数据之价值，实现数据的智慧洞察，为企业提供全面系统的分析，模拟 ，预测和优化，助力企业建立以“数据”为基础的量化决策体系。
+						</p>
+					</div>
+				</div>
+			</div>			
+			<!--合作伙伴-->
+			<div class="teamwork">
+				<div class="teamworkbox">
+					<h1 class="title">PARTNER</h1>
+					<div class="huoban">
+						<span class="left-hr"></span>
+						<h3 class="huoban-title">合作伙伴</h3><span class="right-hr"></span>
+					</div>
+				</div>
+				<div class="teamworkbox2">
+					<ul class="partnerList">
+						<li><img src="images/cop-par/tongji.png" alt="车载监控"></li>
+						<li><img src="images/cop-par/guangggong.png" alt="车载监控系统"></li>
+						<li><img src="images/cop-par/hzimg1-5.jpg" alt="电动汽车监控平台"></li>
+						<li><img src="images/cop-par/hzimg1-6.jpg" alt="电动汽车监控系统"></li>
+						<li><img src="images/cop-par/hzimg1-7.jpg" alt="符合国标的监控系统"></li>
+						<li><img src="images/cop-par/hzimg1-8.jpg" alt="汽车监控"></li>
+						<li><img src="images/cop-par/hzimg2-1.jpg" alt="汽车远程监控系统"></li>
+						<li><img src="images/cop-par/hzimg2-2.jpg" alt="新能源电池"></li>
+						<li><img src="images/cop-par/hzimg2-3.jpg" alt="新能源监控系统"></li>
+						<li><img src="images/cop-par/hzimg2-4.jpg" alt="新能源汽车BMS电池管理系统"></li>
+						<li><img src="images/cop-par/hzimg2-5.jpg" alt="新能源汽车监控平台"></li>
+						<li><img src="images/cop-par/hzimg2-6.jpg" alt="新能源汽车生产企业及产品准入管理规则"></li>
+						<li><img src="images/cop-par/hzimg2-7.jpg" alt="新能源汽车远程监控系统"></li>
+						<li><img src="images/cop-par/hzimg2-8.jpg" alt="新能源远程监控系统"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--网页底部-->
+		<footer>
+			<div class="footerdiv">
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>解决方案</h3></li>
+						<li><a href="#">监控平台</a></li>
+						<li><a href="#">车载控制器</a></li>
+						<li><a href="#">车载变流器</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">					
+					<ul>
+						<li><h3>信息服务</h3></li>
+						<li><a href="#">文本挖掘</a></li>
+						<li><a href="#">信息侦查</a></li>
+						<li><a href="#">工业建模</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>新闻中心</h3></li>
+						<li><a href="#">公司新闻</a></li>
+						<li><a href="#">行业资讯</a></li>
+						<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>关于我们</h3></li>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist  left">
+					<ul>
+						<li>地址：广州市天河区燕岭路新燕大厦93号1103—1104</li>
+						<li>电话：020-2907 6394</li>
+						<li>邮箱：lihong@gzsiri.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="beian">
+				<p>Copyright © 2015-2016 数锐智能科技有限公司 版权所有<span><a href="#" >&nbsp;粤ICP备15002140号</a></span></p>
+			</div>
+		</footer>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easyfader.min.js"></script>
+	<script src="js/common.js	"></script>
+	<script>
+		$(function() {
+			$('#dowebok').easyFader();
+		});
+	</script>
+
+</html>

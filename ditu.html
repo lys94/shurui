@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+<title>百度地图API自定义地图</title>
+<link rel="stylesheet" type="text/css" href="css/about.css"/>
+<!--引用百度地图API-->
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+  <header class="header">
+			<nav class="nav">
+				<!--<div class="nav-logo">
+					<img src="img/navLogo.png"  />
+				</div>-->
+				<a href="#" class="nav-logo"><img src="images/navLogo.png" /></a>
+				<div class="nav-right">
+					<ul class="majNavList">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a class="jiejue"  href="solve.html">解决方案</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList" >
+					              <li><a href="#">监控平台</a></li>
+					              <li><a href="#">车载控制器</a></li>
+					              <li><a href="#">车载变流器</a></li>
+					            </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="dataService.html">数据服务</a>
+							<div class="sub-menu lite">
+								<ul class="minorNavList ">
+					              <li><a href="#contentdiv1" onclick="on1()">文本挖掘</a></li>
+					              <li><a href="#contentdiv2" onclick="on2()">信息侦查</a></li>
+					              <li><a href="#contentdiv3" onclick="on3()">工业建模</a></li>
+					            </ul>
+							</div>
+						</li>
+						<li>
+							<a href="news.html">新闻中心</a>
+							<div class="sub-menu " >
+								<ul class="minorNavList  newsNavList" >
+                                  <li><a href="#">公司新闻</a></li>
+			                      <li><a href="#">行业资讯</a></li>
+			                      <li><a href="#">合作伙伴</a></li>
+                                </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList  aboutNavList">
+				              		<li><a href="#">公司简介</a></li>
+				                    <li><a href="#">联系我们</a></li>
+				                    <li><a href="#">人才招聘</a></li>
+				                </ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--解决导航栏设置position：fixed 属性脱离文档流问题-->
+		
+		<div class="null"></div>
+		
+		<!--网页中部-->
+		<div class="container">
+			<div id="banner">
+				<img src="images/about-banner.jpg"  alt="广州数锐智能科技有限公司，是国内专业的商用车车联网服务公司。专业为客车、公交车、乘用车，定制车联网信息化解决方案。以新能源BMS、车载监控平台、驾驶行为分析、动力电池监控及监控评估等车联网大数据应用为核心，提供城市级别新能源汽车监控系统、提供地方标准与国家标准的解决方案、提供配套解决方案(布局，软件平台，硬件服务器等)。致力于车厂及运输车队的车辆运营安全性、低成本、高效管理。"/>
+			</div>
+			<div class="content">
+				<div class="extraNav">
+					<div class="wrap">
+						<div class="extraNavItem extraNav-1"><a href="#" class="active" id="jiankon" onclick="on1()" >公司简介</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-2"><a href="#" id="kongzhi" onclick="on2()">联系我们</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-3"><a href="#" id="bianliu" onclick="on3()">人才招聘</a></div>
+					</div>
+				</div>
+				
+				<!-- 公司简介-->
+				<div class="contentdiv1 " id="contentdiv1">
+					<h1 class="title">广州数锐智能科技有限公司</h1>
+					<p class="title2">Guangzhou Siri Intelligent Technology Co., Ltd.</p>
+					<div class="introductiontxt">
+						<p>数锐智能致力于为客户提供想要的产品及服务，从硬件产品到软件服务，确保用户获得准确、真实的数据，同时确保用户快速、高效地使用数据。数锐智能将为所有的客户提供一套成熟的数据采集、传输、处理和业务管理于一体的新能源汽车解决方案。</p>
+						<p>在数据服务领域，数锐智能致力于为用户提供数据采集产品、专用软件和实施解决方案的专门技术知识的组合，注重在某一步骤或全过程提供正确的评估及系统设计，提供最合适和风险最小的解决方案满足用户的生产，科研需要。数锐智能将为您提供从产品应用咨询、软件开发、到系统整合全过程服务。</p>
+						<p>未来，行业大数据必将在政府、大中型企业等领域大幅度提升管理服务水平和决策能力。 数锐智能将持续为客户提供更好的数据服务，力求通过自主研发更多的数据产品，建模产品，同时结合当前前沿技术完善自身产品，为企业在竞争中提供更有力的支持。</p>
+					</div>
+					<div class="introductionimg">
+						<div class="introductionimgdiv"><img src="images/job1.png" /> <h2>数据挖掘</h2></div>
+						<div class="introductionimgdiv"><img src="images/job2.png" /> <h2>工业建模</h2></div>
+						<div class="introductionimgdiv"><img src="images/job3.png" /> <h2>系统开发</h2></div>
+					</div>
+					
+				</div>
+
+				<!--联系我们-->
+				<div class="contentdiv2" id="contentdiv2">
+					<h1 class="title">广州数锐智能科技有限公司</h1>
+					<p class="title2">Guangzhou Siri Intelligent Technology Co., Ltd.</p>
+					<div class="collaboratediv">
+						<div class="collaborate">
+							<h1>商务合作<span> (Business cooperation)</span></h1>
+							<div class="collaborate-request">
+								<h2>李先生<span> (Mr.Li)</span></h2>
+								<p>邮箱（Email）：lihong@gzsiri.com</p>
+								<p>手机（Tel）：13430387985</p>
+								<p>总机（Tel）：020-29076394</p>
+							</div>
+						</div>
+						<div class="collaborate">
+							<h1>商务合作<span> (Business cooperation)</span></h1>
+							<div class="collaborate-request">
+								<h2>张先生<span> (Mr.Zhang)</span></h2>
+								<p>邮箱（Email）：commerce@gzsiri.com</p>
+								<p>手机（Tel）：17051208610</p>
+								<p>总机（Tel）：020-29076394</p>
+							</div>
+						</div>
+					</div>
+					<div style="width:800px;height:450px;border:#ccc solid 1px;" id="dituContent"></div>
+				</div>
+				    
+				<!-- 人才招聘-->
+				<div class="contentdiv3" id="contentdiv3">
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		                
+		<!--网页底部-->
+		<footer>
+			<div class="footerdiv">
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>解决方案</h3></li>
+						<li><a href="#">监控平台</a></li>
+						<li><a href="#">车载控制器</a></li>
+						<li><a href="#">车载变流器</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">					
+					<ul>
+						<li><h3>信息服务</h3></li>
+						<li><a href="#">文本挖掘</a></li>
+						<li><a href="#">信息侦查</a></li>
+						<li><a href="#">工业建模</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>新闻中心</h3></li>
+						<li><a href="#">公司新闻</a></li>
+						<li><a href="#">行业资讯</a></li>
+						<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>关于我们</h3></li>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist  left">
+					<ul>
+						<li>地址：广州市天河区燕岭路新燕大厦93号1103—1104</li>
+						<li>电话：020-2907 6394</li>
+						<li>邮箱：lihong@gzsiri.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="beian">
+				<p>Copyright © 2015-2016 数锐智能科技有限公司 版权所有<span><a href="#" >&nbsp;粤ICP备15002140号</a></span></p>
+			</div>
+		</footer>
+</body>
+<script type="text/javascript" src="js/common.js" ></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.335082,23.167005);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_SMALL});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"广州数锐智能有限公司",content:"地址:广州市天河区燕岭路新燕大厦93号1103—1104<br/>电话:86-020-29076394<br/>手机:86-13430387985<br/>邮箱:lihg@gzsiri.com",point:"113.334372|23.166199",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://map.baidu.com/image/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+</html>

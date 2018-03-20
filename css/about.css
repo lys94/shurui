@@ -1,0 +1,344 @@
+.header{
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: #333333;
+	z-index: 1000;
+}
+
+.null{
+	width: 100%;
+	height: 60px;
+}
+
+.nav{
+	height: 60px;
+	width: 1300px;
+	
+}
+.nav-logo img{
+	height: 60px;
+	overflow: hidden;
+	margin-left: 20px;
+}
+.nav-right{
+	margin-right: 100px;
+	height: 60px;
+	float: right;
+}
+.nav-right ul{
+    margin: 0;
+}
+.nav-right ul li{
+	position: relative;
+	width: 100px;
+	height: 60px;
+	float: left;
+	list-style-type: none;
+}
+.nav-right ul li a{
+	display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-right ul li a:hover {
+	background-color: #717171;
+	
+}
+
+.nav li:hover .sub-menu{
+	display: block;
+}
+.sub-menu{
+	display: none;
+}
+
+.minorNavList{
+	width: 300px !important;
+    position: absolute;
+    background: #c9c9c9;
+    border-radius: 0 0 5px 5px;
+    top: 60px;
+    left: -100px;
+}
+
+
+
+/*container*/
+.container{
+	width: 100%;
+	height: 100%;
+}
+#banner{
+    height: 362px;
+    z-index: 1;
+}
+#banner img {
+    float: left;
+    width: 100%;
+    height: 362px;
+}
+
+/*conten-nav*/
+.content-nav{
+	width: 600px;
+	height: 100px;
+	margin: 0 auto;
+}
+.content-nav ul li{
+	float: left;
+	list-style-type: none;
+	text-decoration: none;
+	padding: 20px;
+	text-align: center;	
+}
+.content-nav ul li a{
+	display: inline-block;
+	
+}
+
+footer{
+	width: 100%;
+	height: 250px;
+	background-color: #4A4A4A;
+}
+.footerdiv{
+	width: 1000px;
+	height: 250px;
+	margin: 0 auto;
+}
+.footerdivlist{
+	float: left;
+	width: 150px;
+	margin-top: 39px;
+}
+.footerdivlist li{
+	line-height: 36px;
+	list-style-type: none;
+}
+.footerdivlist li a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 14px;
+}
+.footerdivlist li a:hover{
+	color: #299DFF;
+}
+.footerdivlist ul li h3{
+	color: #FFF;
+	font-size: 18px;
+}
+
+.left{
+	width: 400px !important;
+	font-size: 14px;
+	margin-top: 76px;
+	color: #fff;
+}
+.beian{
+	height: 60px;
+	background-color: #272727;
+	text-align: center;
+	color: #fff;
+	
+}
+.beian p{
+	margin: 0px;
+	padding-top: 20px;
+	color: #fff;
+	font-size: 14px;
+}
+.beian p span a {
+	text-decoration: none;
+	color: #fff;
+	
+}
+
+
+/* content 导航样式*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei";
+    font-size: 16px;
+}
+
+.content{
+	width: 100%;
+	margin-bottom: 60px;
+}
+.extraNav {
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    line-height: 36px;
+    font-size: 20px;
+    margin: 40px auto;
+    width: 400px;
+    text-align: center;
+}
+.extraNav .wrap .extraNavItem {
+    float: left;
+}
+.extraNav .wrap .extraNavItem a.active {
+    border-bottom: 5px solid #EC4444;
+}
+.extraNav .wrap .extraNavItem a:hover {
+    border-bottom: 5px solid #EC4444;
+}
+.extraNav .wrap .verLine {
+    float: left;
+    height: 36px;
+    width: 1px;
+    background: #313131;
+    margin: 0 15px;
+}
+.extraNav .wrap .extraNavItem a {
+    color: #2e2e2e;
+    font-size: 20px;
+    display: inline-block;
+    height: 36px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 公司简介*/
+.contentdiv1{
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* 标题样式*/
+.title{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+    color: #000;
+}
+.title2{
+	color: #2e2e2e;
+}
+
+
+.introductiontxt{
+	margin: 20px auto;
+}
+.introductiontxt p{
+	text-indent: 2em;
+	line-height: 30px;
+}
+.introductionimg{
+	display: flex;
+	justify-content: center;
+}
+.introductionimgdiv{
+	margin: auto 111px;
+}
+.introductionimgdiv h2{
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+
+/* 联系我们*/
+
+.contentdiv2{
+	display: none;
+	width: 960px;
+	margin: 0 auto;
+}
+.collaboratediv{
+	/*display: flex;
+	justify-content: center;*/
+	width: 100%;
+	height: 150px;
+	margin: 15px auto;
+}
+.collaborate{
+	float: left;
+	margin-right: 300px;
+}
+.collaborate:nth-child(2){
+	margin-right: 0px;
+}
+.contentdiv2 .collaborate h2,.collaborate h1{
+	margin: 15px auto;
+}
+.collaborate h1{
+	font-size: 20px ;
+}
+.collaborate:nth-child(2){
+	margin-right: 0px;
+}
+.collaborate-request{
+	margin-bottom: 30px;
+}
+
+
+/* 百度地图样式*/
+
+    html,
+    body {
+    	margin: 0;
+    	padding: 0;
+    }
+    
+    .iw_poi_title {
+    	color: #CC5522;
+    	font-size: 14px;
+    	font-weight: bold;
+    	overflow: hidden;
+    	padding-right: 13px;
+    	white-space: nowrap
+    }
+    
+    .iw_poi_content {
+    	font: 12px arial, sans-serif;
+    	overflow: visible;
+    	padding-top: 4px;
+    	white-space: -moz-pre-wrap;
+    	word-wrap: break-word
+    }
+
+
+/* 人才招聘*/
+
+.contentdiv3{
+	display: none;
+	width: 960px;
+	margin: 0 auto;
+}
+.jobs{
+	display: flex;
+	justify-content: center;
+	margin: 50px auto;
+}
+.jobs-post{
+	margin-right: 50px;
+}
+.jobs-post:nth-child(2){
+	margin-right: 0px;
+}
+.jobs-post h1{
+	font-size: 20px;
+}
+.jobs-message h2{
+	font-size: 18px;
+	margin: 15px auto;
+}
+.jobs-message p{
+	font-size: 14px;
+	line-height: 25px;
+}
+.height{
+	height: 164px;
+}
+.height2{
+	height: 189px;
+}

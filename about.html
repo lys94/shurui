@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/about.css"/>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<!--<div class="nav-logo">
+					<img src="img/navLogo.png"  />
+				</div>-->
+				<a href="#" class="nav-logo"><img src="images/navLogo.png" /></a>
+				<div class="nav-right">
+					<ul class="majNavList">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a class="jiejue"  href="solve.html">解决方案</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList" >
+					              <li><a href="#">监控平台</a></li>
+					              <li><a href="#">车载控制器</a></li>
+					              <li><a href="#">车载变流器</a></li>
+					            </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="dataService.html">数据服务</a>
+							<div class="sub-menu lite">
+								<ul class="minorNavList ">
+					              <li><a href="#contentdiv1" onclick="on1()">文本挖掘</a></li>
+					              <li><a href="#contentdiv2" onclick="on2()">信息侦查</a></li>
+					              <li><a href="#contentdiv3" onclick="on3()">工业建模</a></li>
+					            </ul>
+							</div>
+						</li>
+						<li>
+							<a href="news.html">新闻中心</a>
+							<div class="sub-menu " >
+								<ul class="minorNavList  newsNavList" >
+                                  <li><a href="#">公司新闻</a></li>
+			                      <li><a href="#">行业资讯</a></li>
+			                      <li><a href="#">合作伙伴</a></li>
+                                </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList  aboutNavList">
+				              		<li><a href="#">公司简介</a></li>
+				                    <li><a href="#">联系我们</a></li>
+				                    <li><a href="#">人才招聘</a></li>
+				                </ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--解决导航栏设置position：fixed 属性脱离文档流问题-->
+		
+		<div class="null"></div>
+		
+		<!--网页中部-->
+		<div class="container">
+			<div id="banner">
+				<img src="images/about-banner.jpg"  alt="广州数锐智能科技有限公司，是国内专业的商用车车联网服务公司。专业为客车、公交车、乘用车，定制车联网信息化解决方案。以新能源BMS、车载监控平台、驾驶行为分析、动力电池监控及监控评估等车联网大数据应用为核心，提供城市级别新能源汽车监控系统、提供地方标准与国家标准的解决方案、提供配套解决方案(布局，软件平台，硬件服务器等)。致力于车厂及运输车队的车辆运营安全性、低成本、高效管理。"/>
+			</div>
+			<div class="content">
+				<div class="extraNav">
+					<div class="wrap">
+						<div class="extraNavItem extraNav-1"><a href="#" class="active" id="jiankon" onclick="on1()" >公司简介</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-2"><a href="#" id="kongzhi" onclick="on2()">联系我们</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-3"><a href="#" id="bianliu" onclick="on3()">人才招聘</a></div>
+					</div>
+				</div>
+				
+				<!-- 公司简介-->
+				<div class="contentdiv1 " id="contentdiv1">
+					<h1 class="title">广州数锐智能科技有限公司</h1>
+					<p class="title2">Guangzhou Siri Intelligent Technology Co., Ltd.</p>
+					<div class="introductiontxt">
+						<p>数锐智能致力于为客户提供想要的产品及服务，从硬件产品到软件服务，确保用户获得准确、真实的数据，同时确保用户快速、高效地使用数据。数锐智能将为所有的客户提供一套成熟的数据采集、传输、处理和业务管理于一体的新能源汽车解决方案。</p>
+						<p>在数据服务领域，数锐智能致力于为用户提供数据采集产品、专用软件和实施解决方案的专门技术知识的组合，注重在某一步骤或全过程提供正确的评估及系统设计，提供最合适和风险最小的解决方案满足用户的生产，科研需要。数锐智能将为您提供从产品应用咨询、软件开发、到系统整合全过程服务。</p>
+						<p>未来，行业大数据必将在政府、大中型企业等领域大幅度提升管理服务水平和决策能力。 数锐智能将持续为客户提供更好的数据服务，力求通过自主研发更多的数据产品，建模产品，同时结合当前前沿技术完善自身产品，为企业在竞争中提供更有力的支持。</p>
+					</div>
+					<div class="introductionimg">
+						<div class="introductionimgdiv"><img src="images/job1.png" /> <h2>数据挖掘</h2></div>
+						<div class="introductionimgdiv"><img src="images/job2.png" /> <h2>工业建模</h2></div>
+						<div class="introductionimgdiv"><img src="images/job3.png" /> <h2>系统开发</h2></div>
+					</div>
+					
+				</div>
+
+				<!--联系我们-->
+				<div class="contentdiv2" id="contentdiv2">
+					<h1 class="title">广州数锐智能科技有限公司</h1>
+					<p class="title2">Guangzhou Siri Intelligent Technology Co., Ltd.</p>
+					<div class="collaboratediv">
+						<div class="collaborate">
+							<h1>商务合作<span> (Business cooperation)</span></h1>
+							<div class="collaborate-request">
+								<h2>李先生<span> (Mr.Li)</span></h2>
+								<p>邮箱（Email）：lihong@gzsiri.com</p>
+								<p>手机（Tel）：13430387985</p>
+								<p>总机（Tel）：020-29076394</p>
+							</div>
+						</div>
+						<div class="collaborate">
+							<h1>商务合作<span> (Business cooperation)</span></h1>
+							<div class="collaborate-request">
+								<h2>张先生<span> (Mr.Zhang)</span></h2>
+								<p>邮箱（Email）：commerce@gzsiri.com</p>
+								<p>手机（Tel）：17051208610</p>
+								<p>总机（Tel）：020-29076394</p>
+							</div>
+						</div>
+					</div>
+					<div style="width:800px;height:450px;border:#ccc solid 1px;" id="dituContent"></div>
+				</div>
+				    
+				<!-- 人才招聘-->
+				<div class="contentdiv3" id="contentdiv3">
+					<h1 class="title">广州数锐智能科技有限公司</h1>
+					<p class="title2">Guangzhou Siri Intelligent Technology Co., Ltd.</p>
+					<div class="jobs">
+						<div class="jobs-post">
+							<h1>数据挖掘工程师</h1>
+							<div class="jobs-message ">
+								<h2>岗位职责：</h2>
+								<p>1、分析与建立业务主题，对大规模数据进行整理，建立挖掘模型；</p>
+								<p>2、对离散的数据进行统计、挖掘，找出数据间的相关关系，并基于发现的关系实现自动化的决策建议、信息提示；</p>
+								<p>3、互联网数据的爬取、过滤、整理、分析与挖掘；</p>
+								<p>4、分析系统技术缺陷、持续数据挖掘迭代。</p>
+							</div>
+							<div class="jobs-message">
+								<h2>任职要求：</h2>
+								<p>1、本科以上学历，计算机、软件、数学等专业，能够阅读英文专业文献；</p>
+								<p>2、具有良好的数学基础，掌握数理统计、数据挖掘等方面的模型与算法，对数据结构与算法设计有较深刻的理解；</p>
+								<p>3、具有自然语言处理、分词、数据爬取、hadoop等方面的项目经验优先；</p>
+								<p>4、熟悉一门脚本语言，熟悉JAVA开发；</p>
+								<p>5、热爱技术研究、具有钻研精神；</p>
+								<p>6、善于团队沟通与合作，乐于分享。</p>
+							</div>
+						</div>
+						<div class="jobs-post">
+							<h1>系统开发工程师</h1>
+							<div class="jobs-message height">
+								<h2>岗位职责：</h2>
+								<p>1、协助开发组长进行控制系统的设计；</p>
+								<p>2、完成控制系统的开发、测试工作；</p>
+								<p>3、编制完整的系统/模块设计、开发、测试文档。</p>
+							</div>
+							<div class="jobs-message">
+								<h2>任职要求：</h2>
+								<p>1、熟悉PHP、C/C++/JAVA等至少一门语言，对数据结构和算法设计有较为深刻的理解；</p>
+								<p>2、具有良好的数学基础，掌握数理统计、数据挖掘等方面的模型与算法，对数据结构与算法设计有较深刻的理解；</p>
+								<p>2、熟悉Javascript、CSS、DIV等页面技术，熟悉AFAX开发；</p>
+								<p>3、较强的沟通表达能力及团队协调能力，学习能力强、能承受压力；</p>
+								<p>4、积极的人生观，对生活、工作充满热情；</p>
+								<p>5、熟悉PHP，有工作经验者优先。</p>
+							</div>
+						</div>
+					</div>
+					<div class="jobs">
+						<div class="jobs-post">
+							<h1>数据库工程师</h1>
+							<div class="jobs-message">
+								<h2>岗位职责：</h2>
+								<p>1、主要负责软件数据库分析，挖掘数据内部原因；</p>
+								<p>2、负责公司业务相关数据的入库、整理、更新、维护、提取工作及相关程序编写；</p>
+								<p>3、项目计划实施跟进，负责各项数据整理分析及运营相关事宜；</p>
+								<p>4、对公司现有数据库系统进行维护、优化；</p>
+								<p>5、对我公司现有数据库系统的新功能模块进行编程制作。</p>
+							</div>
+							<div class="jobs-message">
+								<h2>任职要求：</h2>
+								<p>1、无相关专业、学历要求，对数据库开发感兴趣；</p>
+								<p>2、了解Sql server、Mysql、Oracle、DB2其中一种或多种；</p>
+								<p>3、了解服务器语言（PHP、C#）等接口的编写；</p>
+								<p>4.具有良好的沟通、理解及逻辑分析能力；</p>
+								<p>5.熟悉PHP+IIS+MSSQL后台开发者优先考虑。</p>
+							</div>
+						</div>
+						<div class="jobs-post">
+							<h1>前端工程师</h1>
+							<div class="jobs-message height2">
+								<h2>岗位职责：</h2>
+								<p>1、根据产品原型开发前端代码，配合完成后端数据的接口；</p>
+								<p>2、解决不同浏览器及不同版本的兼容性问题；</p>
+								<p>3、根据项目要求，制定前端框架与编码规范；</p>
+								<p>4、配合开发部其他项目同事的工作；</p>
+							</div>
+							<div class="jobs-message">
+								<h2>任职要求：</h2>
+								<p>1、有实际前端开发工作经验，熟悉JavaScript、CSS、HTML、HTTP协议；</p>
+								<p>2、熟悉angularjs、backbonejs、bootstrap者优先；</p>
+								<p>3、有nodejs或Python开发经验者优先；</p>
+								<p>4、有团队协作精神，善于沟通和学习，乐于探索；</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		                
+		<!--网页底部-->
+		<footer>
+			<div class="footerdiv">
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>解决方案</h3></li>
+						<li><a href="#">监控平台</a></li>
+						<li><a href="#">车载控制器</a></li>
+						<li><a href="#">车载变流器</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">					
+					<ul>
+						<li><h3>信息服务</h3></li>
+						<li><a href="#">文本挖掘</a></li>
+						<li><a href="#">信息侦查</a></li>
+						<li><a href="#">工业建模</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>新闻中心</h3></li>
+						<li><a href="#">公司新闻</a></li>
+						<li><a href="#">行业资讯</a></li>
+						<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>关于我们</h3></li>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist  left">
+					<ul>
+						<li>地址：广州市天河区燕岭路新燕大厦93号1103—1104</li>
+						<li>电话：020-2907 6394</li>
+						<li>邮箱：lihong@gzsiri.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="beian">
+				<p>Copyright © 2015-2016 数锐智能科技有限公司 版权所有<span><a href="#" >&nbsp;粤ICP备15002140号</a></span></p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<script type="text/javascript" src="js/common.js" ></script>
+</html>

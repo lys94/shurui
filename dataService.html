@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/dataService.css"/>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<!--<div class="nav-logo">
+					<img src="img/navLogo.png"  />
+				</div>-->
+				<a href="#" class="nav-logo"><img src="images/navLogo.png" /></a>
+				<div class="nav-right">
+					<ul class="majNavList">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a class="jiejue"  href="solve.html">解决方案</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList" >
+					              <li><a href="solve.html">监控平台</a></li>
+					              <li><a href="solve.html">车载控制器</a></li>
+					              <li><a href="solve.html">车载变流器</a></li>
+					            </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="dataService.html">数据服务</a>
+							<div class="sub-menu lite">
+								<ul class="minorNavList ">
+					              <li><a href="#contentdiv1" onclick="on1()">文本挖掘</a></li>
+					              <li><a href="#contentdiv2" onclick="on2()">信息侦查</a></li>
+					              <li><a href="#contentdiv3" onclick="on3()">工业建模</a></li>
+					            </ul>
+							</div>
+						</li>
+						<li>
+							<a href="news.html">新闻中心</a>
+							<div class="sub-menu " >
+								<ul class="minorNavList  newsNavList" >
+                                  <li><a href="news.html">公司新闻</a></li>
+			                      <li><a href="news.html">行业资讯</a></li>
+			                      <li><a href="news.html">合作伙伴</a></li>
+                                </ul>
+							</div>							
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+							<div class="sub-menu lite" >
+								<ul class="minorNavList  aboutNavList">
+				              		<li><a href="#">公司简介</a></li>
+				                    <li><a href="#">联系我们</a></li>
+				                    <li><a href="#">人才招聘</a></li>
+				                </ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--解决导航栏设置position：fixed 属性脱离文档流问题-->
+		
+		<div class="null"></div>
+		
+		<!--网页中部-->
+		<div class="container">
+			<div id="banner">
+				<img src="images/system-banner.jpg" />
+			</div>
+			<div class="content">
+				<div class="extraNav">
+					<div class="wrap">
+						<div class="extraNavItem extraNav-1"><a href="#" class="active" id="jiankon" onclick="on1()" >文本挖掘</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-2"><a href="#" id="kongzhi" onclick="on2()">信息侦查</a></div>
+						<span class="verLine"></span>
+						<div class="extraNavItem extraNav-3"><a href="#" id="bianliu" onclick="on3()">工业建模</a></div>
+					</div>
+				</div>
+				
+				<!-- 文本挖掘-->
+				<div class="contentdiv1 " id="contentdiv1">
+					<div class="textMining">
+						<div class="textMiningImg">
+							<img class="leftImg" src="images/u58.png" />	
+						</div>
+						<div class="textMiningTxt">
+							<p>文本挖掘指的是针对非数据类型的信息进行分析、挖掘。</p>
+							<br />
+							<p>文本挖掘是数据挖掘中较为重要的模块，主要是因为当前信息传递很多是非数据类型。数锐智能针对文本挖掘提供了多个挖掘模型：情感分析、信息分类、文本聚类、关键词提取。同时结合可视化技术，将文本挖掘结果图像化，使得数据结果更加明显、直观。</p>
+						</div>						
+					</div>
+					<div class="textMining">						
+						<div class="textMiningTxt2">
+							<h2>案例</h2>
+							<p><span id="kehu">客户：某市场调研公司</span><span id="xuqiu">需求：市场上手机各品牌口碑分析</span></p>
+							<p class="demoPar"><span>数锐智能解决方案：</span>数锐团队从互联网抓取了超过1000万条，跨度为7个月的相关评论数据、转发数据的文本信息，内容涉及六个手机品牌，通过数锐团队提供的文本挖掘模型，快速解读了文本信息中相关消费者情感及营销策略。最后，数锐团队将研究成果视觉化，让数据结果更加形象、直观。</p>
+						</div>
+						<div class="textMiningImg2">
+							<img src="images/u62.png" />
+						</div>
+					</div>	
+					
+				</div>
+
+				    <!--信息侦查-->
+				    <div class="contentdiv2" id="contentdiv2">
+							<div class="message">
+								<div class="messageImg">
+									<img class="leftImg" src="images/u69.png" />	
+								</div>
+								<div class="messageTxt">
+									<p>信息侦查是指通过某些信息点挖掘出具有相同属性或所同个类的事情、人物。</p>
+									<br />
+									<p>数锐智能提供的信息关联模型，可以通过确认部分人物的行为特征，进而从海量数据中，挖掘潜在的具有相同行为特征的人物价值。基于大数据的信息关联模型，结合半监督机器学习技术，在人物行为特征识别准确度高达85%。</p>
+								</div>						
+							</div>
+							<div class="message">						
+								<div class="messageTxt2">
+									<h2>案例</h2>
+									<p><span id="kehu">客户：某职能执法机构</span><span id="xuqiu">需求：利用数据挖掘技术寻找嫌疑人</span></p>
+									<p class="demoPar"><span>数锐智能解决方案：</span>我们从机构获取了超过10万条的相关人员行为数据，通过数锐智能研究的信息关联模型进行关联分析，分析所有人员与已知嫌疑人的关联，最后获取与已知嫌疑人关联程度较高的人群。最终数锐智能提供的数据挖掘报告有效地帮助了该机构工作的进展，同时报告结果的准确率高达85%。</p>
+								</div>
+								<div class="messageImg2">
+									<img src="images/u73.png" />
+								</div>
+							</div>		
+				    </div>
+				    
+				<!-- 工业建模-->
+				<div class="contentdiv3" id="contentdiv3">
+					<div class="industry">
+						<div class="industryImg">
+							<img class="leftImg" src="images/u83.png" />	
+						</div>
+						<div class="industryTxt">
+							<p>数据的重要性随着数据商业意识的普及也逐渐被大家所认识。在工业企业中，每一条生产流水线都包含着大量的数据，包括生产环节的温度控制，加热时间，压力区间等大量工业生产数据，同时生产流水线的生产效率和生产成本也是企业盈利的最大影响因素。合理地利用生产数据，挖掘数据中可利用价值，可以大大提高生产流水线的生产效率，减少生产成本，在为企业获得更高的利润时还能提高企业的核心竞争力。</p>
+						</div>						
+					</div>
+					<div class="industry">						
+						<div class="industryTxt2">
+							<h2>案例</h2>
+							<p><span id="kehu">客户：某陶瓷制作企业</span><span id="xuqiu">需求：优化生产线，减少能源消耗</span></p>
+							<p class="demoPar"><span>数锐智能解决方案：</span>我们从企业的流水生产线获悉流水生产线的运作模式，同时了解生产过程中那些环节容易导致资源浪费。通过数学模型模拟仿真该企业生产流水线的加工环节，调节可控制因素，观察因素变动对生产流水线所产生的影响。通过生产流水线的合理调节，有效地将该企业能耗下降20%。</p>
+						</div>
+						<div class="industryImg2">
+							<img src="images/u87.png" />
+						</div>
+					</div>	
+					
+				</div>
+			</div>
+		</div>
+		
+		                
+		<!--网页底部-->
+		<footer>
+			<div class="footerdiv">
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>解决方案</h3></li>
+						<li><a href="#">监控平台</a></li>
+						<li><a href="#">车载控制器</a></li>
+						<li><a href="#">车载变流器</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">					
+					<ul>
+						<li><h3>信息服务</h3></li>
+						<li><a href="#">文本挖掘</a></li>
+						<li><a href="#">信息侦查</a></li>
+						<li><a href="#">工业建模</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>新闻中心</h3></li>
+						<li><a href="#">公司新闻</a></li>
+						<li><a href="#">行业资讯</a></li>
+						<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist">
+					<ul>
+						<li><h3>关于我们</h3></li>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="footerdivlist  left">
+					<ul>
+						<li>地址：广州市天河区燕岭路新燕大厦93号1103—1104</li>
+						<li>电话：020-2907 6394</li>
+						<li>邮箱：lihong@gzsiri.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="beian">
+				<p>Copyright © 2015-2016 数锐智能科技有限公司 版权所有<span><a href="#" >&nbsp;粤ICP备15002140号</a></span></p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="js/common.js" ></script>
+</html>
